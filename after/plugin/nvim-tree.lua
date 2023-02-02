@@ -10,11 +10,12 @@ require("nvim-tree").setup({
         update_cwd = true,
         ignore_list = {},
     },
+    git = {
+        enable = false
+    },
     actions = {
         open_file = {
             resize_window = false
         }
     }
 });
-
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>");

@@ -9,7 +9,9 @@ whichkey.register({
     f = {
         name = "find",
         f = "Live Grep",
-        s = "Grep string"
+        s = "Grep string",
+        t = "Workspace symbols",
+        b = "Fuzzy search buffer"
     },
     h = {
         name = "Git",

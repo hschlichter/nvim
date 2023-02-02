@@ -1,6 +1,4 @@
-local tmux = require("tmux");
-
-tmux.setup({
+require("tmux").setup({
     copy_sync = {
         enable = true,
         ignore_buffers = { empty = false },
@@ -13,7 +11,7 @@ tmux.setup({
     },
     navigation = {
         cycle_navigation = false,
-        enable_default_keybindings = true,
+        enable_default_keybindings = false,
         persist_zoom = false,
     },
     resize = {
@@ -22,8 +20,3 @@ tmux.setup({
         resize_step_y = 5,
     }
 });
-
-vim.keymap.set("n", "<C-left>", tmux.resize_left);
-vim.keymap.set("n", "<C-down>", tmux.resize_bottom);
-vim.keymap.set("n", "<C-up>", tmux.resize_top);
-vim.keymap.set("n", "<C-right>", tmux.resize_right);

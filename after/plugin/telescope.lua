@@ -20,8 +20,15 @@ require("telescope").setup({
         grep_string = {
             theme = "ivy"
         },
+        lsp_document_symbols = {
+            symbol_width = 75,
+            theme = "ivy"
+        },
         lsp_dynamic_workspace_symbols = {
-            fname_width = 50,
+            symbol_width = 75,
+            theme = "ivy"
+        },
+        current_buffer_fuzzy_find = {
             theme = "ivy"
         }
     },
@@ -36,10 +43,3 @@ require("telescope").setup({
 })
 
 require("telescope").load_extension("fzf");
-
-local builtin = require("telescope.builtin");
-vim.keymap.set("n", "<C-p>", builtin.find_files, {});
-vim.keymap.set("n", "<C-b>", builtin.buffers, {});
-vim.keymap.set("n", "<C-t>", builtin.lsp_dynamic_workspace_symbols, {});
-vim.keymap.set("n", "<leader>ff", builtin.live_grep, {});
-vim.keymap.set("n", "<leader>fs", builtin.grep_string, {});
