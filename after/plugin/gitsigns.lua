@@ -6,7 +6,7 @@ require("gitsigns").setup({
     current_line_blame_opts = {
         virt_text = true,
         virt_text_pos = "eol",
-        delay = 500,
+        delay = 1000,
         ignore_whitespace = false,
     },
     current_line_blame_formatter = "<author>, <author_time:%Y-%m-%d> - <summary>",
@@ -34,6 +34,7 @@ require("gitsigns").setup({
         vim.keymap.set("n", "<leader>hR", gitsigns.reset_buffer, opts);
         vim.keymap.set("n", "<leader>hb", function() gitsigns.blame_line{full=true} end, opts);
         vim.keymap.set("n", "<leader>hd", gitsigns.diffthis, opts);
+        vim.keymap.set("n", "<leader>hv", gitsigns.toggle_current_line_blame, opts);
     end
 });
 

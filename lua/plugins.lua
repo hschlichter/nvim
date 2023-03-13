@@ -39,5 +39,8 @@ require("packer").startup(function(use)
     use("lewis6991/gitsigns.nvim");
     use("folke/which-key.nvim");
     use("aserowy/tmux.nvim");
+    use("mfussenegger/nvim-dap");
+    use("rcarriga/nvim-dap-ui");
+    use("theHamsta/nvim-dap-virtual-text");
 end)
 

@@ -25,11 +25,31 @@ whichkey.register({
         R = "Reset buffer",
         b = "Blame line",
         d = "Diff file",
+        v = "Toggle current line blame",
     },
     o = "Flip C/C++ header and source",
     s = "Search/replace word",
     y = "Yank to global",
     p = "Paste from global",
+    d = {
+        name = "DAP",
+        t = "Toggle debug view",
+        b = "Toggle breakpoint",
+        c = "Continue",
+        n = "Step over",
+        s = "Step into",
+        o = "Step out",
+        l = "Run last",
+        x = "Terminate session",
+        w = {
+            name = "Windows",
+            b = "Breakpoints",
+            w = "Watches",
+            s = "Scopes",
+            r = "REPL",
+            c = "Console",
+        }
+    }
 }, { prefix = "<leader>" });
 
 whichkey.register({
