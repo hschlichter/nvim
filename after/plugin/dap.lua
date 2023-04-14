@@ -18,17 +18,31 @@ dapui.setup({
     layouts = {
         {
             elements = {
-                {
-                    id = "repl",
-                    size = 0.3
-                },
+        --         {
+        --             id = "repl",
+        --             size = 0.3
+        --         },
                 {
                     id = "stacks",
-                    size = 0.7
+                    size = 1.0
+                }
+            },
+            position = "left",
+            size = 0.2,
+        },
+        {
+            elements = {
+                {
+                    id = "console",
+                    size = 0.5
+                },
+                {
+                    id = "scopes",
+                    size = 0.5
                 }
             },
             position = "bottom",
-            size = 0.4
+            size = 0.3
         }
     }
 });

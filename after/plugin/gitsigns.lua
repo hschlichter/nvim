@@ -1,7 +1,7 @@
 require("gitsigns").setup({
     signcolumn = true,
     numhl = true,
-    linehl = true,
+    linehl = false,
     current_line_blame = true,
     current_line_blame_opts = {
         virt_text = true,
