@@ -7,7 +7,7 @@ lsp.ensure_installed({
     "gopls",
     "pyright",
     "rust_analyzer",
-    "omnisharp"
+    "omnisharp",
 });
 
 local cmp = require("cmp");

@@ -15,8 +15,8 @@ vim.keymap.set("n", "<leader>y", "\"+y");
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]);
 
-local nvimtree = require("nvim-tree");
-vim.keymap.set("n", "<leader>e", nvimtree.toggle);
+local nvimtree = require("nvim-tree.api");
+vim.keymap.set("n", "<leader>e", nvimtree.tree.toggle);
 
 local tmux = require("tmux");
 vim.keymap.set("n", "<C-h>", tmux.move_left);

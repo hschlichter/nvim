@@ -1,7 +1,7 @@
 require("plugins");
 require("remap");
 
-vim.cmd("colorscheme nightfox");
+vim.cmd("colorscheme dracula");
 
 vim.opt.tabstop = 4;
 vim.opt.shiftwidth = 4;
